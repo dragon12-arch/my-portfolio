@@ -1,0 +1,138 @@
+.projects {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.projects-content {
+  width: 100%;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  padding: 28px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background-color: #111;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #666;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.project-card > p {
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.project-tech span {
+  padding: 6px 12px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #ccc;
+  font-size: 13px;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-links a:hover {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+.project-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.project-image {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 60px 40px;
+  }
+
+  .projects-content {
+    width: 100%;
+  }
+
+  .projects-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .project-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.demo-credentials {
+  margin: 16px 0;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.demo-credentials h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.demo-credentials p {
+  margin: 6px 0;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
